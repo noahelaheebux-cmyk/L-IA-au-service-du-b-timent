@@ -7,7 +7,13 @@
 <meta name="theme-color" content="#0B0B0C">
 <title>Genesis · Votre équipe commerciale IA</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<style id="gn-fallback">
+:root{--accent:#c8a66c;--blue:#78bfdf;--green:#64c38b;--purple:#bc91ed}*{box-sizing:border-box}body{margin:0;background:#080809;color:#eee;font:14px/1.5 Inter,Arial,sans-serif}button{font:inherit;cursor:pointer} .app{position:relative;max-width:400px;height:100dvh;margin:auto;background:#0b0b0c;display:flex;flex-direction:column;overflow:hidden;border:1px solid #222;border-radius:30px}.top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px}.brand{color:var(--accent);letter-spacing:2px;text-transform:uppercase;font-size:11px;font-weight:700}.pill,.small{color:#919195;font-size:11px}.pill{border:1px solid #222;padding:4px 9px;border-radius:20px}.screen{flex:1;overflow:auto;padding:0 20px 22px}.pane{display:none}.pane.on{display:block}h1{font-family:'Instrument Serif',Georgia,serif;font-size:36px;font-weight:400;line-height:1.1;margin:12px 0} .sub{color:#999;line-height:1.6;margin:12px 0 20px}.kpis,.mini{display:flex;gap:10px}.kpi{flex:1;background:#141416;border:1px solid #252528;border-radius:20px;padding:14px 12px}.kpi b{display:block;font:32px 'Instrument Serif',Georgia,serif}.kpi span{display:block;color:#999;font-size:12px;line-height:1.3;margin-top:5px}.sec,.row{display:flex;justify-content:space-between;align-items:center}.sec{margin:26px 0 12px}h2{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#999;margin:0}.count{font-size:11px;border:1px solid #5a4930;background:#292318;color:var(--accent);padding:4px 10px;border-radius:20px}.card{background:#141416;border:1px solid #28282b;border-radius:21px;padding:16px;margin-bottom:10px;color:inherit}.tag{background:color-mix(in srgb,var(--c) 15%,transparent);color:var(--c);border-radius:20px;padding:3px 10px;font-size:12px;font-weight:700}.t{font-weight:600;margin-top:8px;font-size:16px}.d{color:#999;margin-top:3px}.ok{width:100%;margin-top:14px;background:var(--accent);border:0;border-radius:14px;padding:12px;color:#080808;font-weight:600}.ok.done{background:#1c2b22;color:var(--green)}.tabbar{display:flex;border-top:1px solid #222;background:#0e0e10;padding:10px 8px max(10px,env(safe-area-inset-bottom))}.tab{flex:1;background:none;border:0;color:#999;font-size:10px;display:flex;align-items:center;flex-direction:column;gap:3px}.tab svg,.back svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7}.tab[aria-current]{color:var(--accent)}.it{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #252525}.it:last-child{border:0}.it p{margin:0}.dot{width:6px;height:6px;flex-shrink:0;border-radius:50%;background:var(--c);margin-top:8px}.av{width:36px;height:36px;flex-shrink:0;border-radius:50%;background:color-mix(in srgb,var(--c) 15%,transparent);color:var(--c);display:grid;place-items:center}.step{display:flex;gap:10px;margin:16px 0}.step .card{flex:1;text-align:left;min-width:0}.stage{color:var(--c);font-size:11px}.nm{font-weight:600;margin-top:6px}.nm span,.ds{color:#999;font-size:12px;font-weight:400}.st,.go{font-size:11px;color:var(--c);margin-top:10px}.hero b{display:block;font:42px 'Instrument Serif',Georgia,serif;color:var(--accent)}.hero span,.note{color:#999;font-size:11px}.fn{margin-bottom:14px}.bar{height:5px;background:#262626;margin-top:8px;border-radius:5px}.bar i{display:block;height:100%;background:var(--c);border-radius:5px}.ctl{display:flex;gap:10px;margin-top:18px}.ctl p{margin:0;font-size:12px;color:#aaa}.sheet{position:absolute;inset:0;background:#0b0b0c;z-index:10;display:none;flex-direction:column}.sheet.open{display:flex}.ch{display:flex;gap:10px;align-items:center;padding:18px;border-bottom:1px solid #252525}.ch span{display:block;color:#999;font-size:11px}.back{border:0;background:none;color:#ccc;padding:6px}.msgs{flex:1;overflow:auto;padding:18px}.b{padding:12px;border-radius:16px;margin-bottom:12px;max-width:90%;font-size:13px}.b.a{background:#19191b}.b.h{background:#342c20;margin-left:auto}.chips{padding:12px;display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid #464034;background:#1b1812;color:#d5b477;border-radius:20px;padding:9px 12px;font-size:12px}.hint{width:100%;font-size:10px;color:#999;text-align:center}.typing i{display:inline-block;width:5px;height:5px;margin:3px;background:#999;border-radius:50%}
+</style>
+<link rel="stylesheet" href="styles.css" onload="document.getElementById('gn-fallback').disabled=true">
+<style>
+.gn-entry{display:block;width:100%;text-align:left;margin:16px 0 20px;padding:15px 16px;border:1px solid #473b29;border-radius:18px;background:linear-gradient(120deg,#201c15,#141416);color:#eee;font:inherit;cursor:pointer}.gn-label{display:block;color:#c8a66c;font-size:10px;letter-spacing:1.4px;text-transform:uppercase}.gn-entry strong{display:block;margin:7px 0 4px;font-size:15px}.gn-entry span.gn-desc{display:block;color:#a4a2a0;font-size:12px;line-height:1.5}.gn-link{display:block;margin-top:10px;color:#d5b477;font-size:12px}.gn-dialog{position:absolute;inset:0;z-index:30;max-width:none;max-height:none;width:100%;height:100%;padding:0;border:0;background:transparent;color:#eee;margin:0;overflow:hidden}.gn-dialog:not([open]){display:none}.gn-dialog::backdrop{background:#0008}.gn-shade{position:absolute;inset:0;background:#0008}.gn-panel{position:absolute;bottom:0;left:0;right:0;max-height:91%;display:flex;flex-direction:column;background:#111113;border:1px solid #34302a;border-radius:25px 25px 0 0;box-shadow:0 -20px 60px #0006}.gn-head{padding:18px 20px 12px;display:flex;align-items:center;justify-content:space-between;gap:12px}.gn-close{background:#242426;color:#ddd;border:1px solid #38383a;border-radius:50%;width:38px;height:38px;font-size:22px;cursor:pointer}.gn-scroll{overflow:auto;padding:0 20px 22px;overscroll-behavior:contain}.gn-title{font:30px/1.1 'Instrument Serif',Georgia,serif;letter-spacing:-.5px;margin:8px 0 12px}.gn-intro{color:#aaa;font-size:13px;line-height:1.6}.gn-picks{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0}.gn-pick{border:1px solid #333337;background:#19191c;color:#aaa;border-radius:20px;padding:9px 11px;font-size:11px;cursor:pointer}.gn-pick[aria-pressed=true]{color:#e1c38e;background:#30281b;border-color:#77603b}.gn-block{background:#19191c;border:1px solid #2c2c30;padding:16px;border-radius:17px;margin:10px 0}.gn-block h3{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#c8a66c;margin:0 0 8px}.gn-block p{margin:0;font-size:13px;color:#c0bdba;line-height:1.65}.gn-guard{font-size:12px;color:#aaa;border-left:2px solid #c8a66c;padding-left:12px;margin:17px 0}.gn-action{width:100%;padding:14px;border:0;border-radius:14px;color:#111;background:#c8a66c;font-weight:600;cursor:pointer}.gn-foot{font-size:10px;color:#85858a;line-height:1.6;margin:13px 0 0}.gn-next{margin:16px 0}.gn-next summary{cursor:pointer;color:#d5b477;font-size:13px;padding:8px 0}.gn-next ol{padding-left:18px;color:#aaa;font-size:12px;line-height:1.7}
+</style>
 </head>
 <body>
 <div class="app">
@@ -17,6 +23,13 @@
       <h1 id="hello">Bonjour</h1>
       <p class="sub">Voici ce que votre équipe commerciale IA a fait pour vous : du premier message au devis signé.</p>
       <div class="kpis"><div class="kpi"><b>26</b><span>demandes reçues (7j)</span></div><div class="kpi"><b>14</b><span>devis envoyés</span></div><div class="kpi"><b>4</b><span>devis signés</span></div></div>
+
+<button class="gn-entry" id="gn-open" type="button" aria-haspopup="dialog" aria-controls="gn-guide">
+<span class="gn-label">Comprendre Genesis · 1 minute</span>
+<strong>Sur chantier, pas en pause commerciale.</strong>
+<span class="gn-desc">Découvrez où l’IA peut vous aider, et ce qui reste entre vos mains.</span>
+<span class="gn-link">Explorer un cas concret →</span>
+</button>
       <div class="sec"><h2>À valider</h2><span class="count" id="cnt">3 en attente</span></div>
       <div id="todo"></div>
       <div class="sec"><h2>Activité récente</h2></div>
@@ -49,6 +62,31 @@
     <div class="msgs" id="msgs"></div>
     <div class="chips" id="chips"></div>
   </div>
+<dialog class="gn-dialog" id="gn-guide" aria-labelledby="gn-title">
+<div class="gn-shade" id="gn-shade"></div>
+<div class="gn-panel">
+<div class="gn-head"><span class="gn-label">Comprendre avant d’automatiser</span><button type="button" class="gn-close" id="gn-close" aria-label="Fermer le guide">×</button></div>
+<div class="gn-scroll">
+<h2 class="gn-title" id="gn-title" style="text-transform:none;color:#eee">L’IA, appliquée à votre quotidien.</h2>
+<p class="gn-intro">Pas besoin de tout automatiser. Explorez un problème, une application possible et un exemple dans cette démo.</p>
+<div class="gn-picks" role="group" aria-label="Choisir votre difficulté">
+<button class="gn-pick" data-gn="requests" aria-pressed="true">Demandes sans réponse</button>
+<button class="gn-pick" data-gn="quotes" aria-pressed="false">Devis à relancer</button>
+<button class="gn-pick" data-gn="time" aria-pressed="false">Trop de temps perdu</button>
+</div>
+<div id="gn-content" aria-live="polite"></div>
+<p class="gn-guard">Vous fixez les règles. Les prix, remises, engagements et situations sensibles doivent suivre votre circuit de validation. L’IA peut se tromper : les informations importantes restent à vérifier.</p>
+<details class="gn-next"><summary>Comment l’appliquer dans mon entreprise ?</summary><ol>
+<li>Choisir une seule tâche : répondre à une demande, préparer une fiche ou proposer une relance.</li>
+<li>Définir les informations utiles, les messages autorisés et les cas à transmettre à une personne.</li>
+<li>Tester sur des exemples fictifs ou anonymisés, puis vérifier les réponses avant tout envoi.</li>
+<li>Si le test est concluant, connecter uniquement les outils et données nécessaires, avec des accès adaptés.</li>
+<li>Suivre le temps passé, les erreurs et les retours clients avant d’élargir l’usage.</li>
+</ol></details>
+<button class="gn-action" id="gn-try" type="button">Voir un exemple avec Léa →</button>
+<p class="gn-foot">Démo illustrative · données et échanges fictifs. Les fonctions présentées supposent une configuration et des intégrations adaptées. Aucun résultat commercial n’est garanti.</p>
+</div></div></dialog>
+
 </div>
 <script>
 var A={
@@ -93,5 +131,25 @@ $("back").onclick=closeChat;
 document.addEventListener("keydown",function(e){if(e.key==="Escape")closeChat()});
 try{var raw=decodeURIComponent((location.hash||"").slice(1)).replace(/[-_]+/g," ").trim();if(raw)$("hello").textContent="Bonjour, "+raw}catch(e){}
 </script>
+
+<script>
+(function(){
+var guide=document.getElementById('gn-guide'),opener=document.getElementById('gn-open'),target='lea';
+var cases={
+requests:{agent:'lea',name:'Léa',problem:'Une demande arrive pendant un chantier ou le soir. Vous ne pouvez pas toujours répondre immédiatement ni recueillir toutes les informations.',solution:'Un assistant peut préparer une première réponse et poser les questions prévues : type de travaux, zone, délai et budget indicatif.',application:'Dans cette démo, Léa illustre le premier échange. Dans votre entreprise, commencez par un seul canal et faites valider les réponses pendant la phase de test.'},
+quotes:{agent:'hugo',name:'Hugo',problem:'Un devis a été envoyé, mais la prochaine action n’est pas planifiée. Vous ne savez plus qui rappeler ni quand.',solution:'Un assistant peut proposer une relance à partir du dossier et d’un calendrier défini, puis signaler les réponses à traiter.',application:'Dans cette démo, Hugo montre des exemples de relances. Pour démarrer, utilisez des brouillons validés par vous, avec arrêt dès qu’un client répond ou demande à ne plus être contacté.'},
+time:{agent:'ines',name:'Inès',problem:'Les informations sont éparpillées dans les messages, les notes et les emails. Préparer un dossier demande des recherches répétitives.',solution:'Un assistant peut extraire les informations fournies, les organiser dans une fiche et indiquer ce qui manque, sans inventer de réponse.',application:'Dans cette démo, Inès illustre la qualification. Pour démarrer, définissez une fiche simple : besoin, zone, délai et budget déclaré. Vérifiez son exactitude avant de préparer un devis.'}
+};
+function choose(key){var c=cases[key];target=c.agent;document.querySelectorAll('[data-gn]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.gn===key))});var host=document.getElementById('gn-content');host.replaceChildren();[['Le problème',c.problem],['La solution possible',c.solution],['Comment appliquer l’IA',c.application]].forEach(function(item){var box=document.createElement('div');box.className='gn-block';var h=document.createElement('h3');h.textContent=item[0];var p=document.createElement('p');p.textContent=item[1];box.append(h,p);host.append(box)});document.getElementById('gn-try').textContent='Voir un exemple avec '+c.name+' →'}
+opener.addEventListener('click',function(){guide.showModal();document.getElementById('gn-close').focus()});
+function close(){guide.close();opener.focus()}
+document.getElementById('gn-close').onclick=close;document.getElementById('gn-shade').onclick=close;
+guide.addEventListener('keydown',function(e){if(e.key==='Escape'){e.stopPropagation()}});
+document.querySelectorAll('[data-gn]').forEach(function(b){b.onclick=function(){choose(b.dataset.gn)}});
+document.getElementById('gn-try').onclick=function(){guide.close();var tab=document.querySelector('.tab[data-p="team"]');if(tab)tab.click();if(typeof openChat==='function')openChat(target)};
+choose('requests');
+})();
+</script>
+
 </body>
 </html>
